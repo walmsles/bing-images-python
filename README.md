@@ -9,7 +9,7 @@ The following should be configurable:
 	* Number of records returned by the web service
 	* location of files to be downloaded
 
-An already downloaded file should never be downloaded again in any subsequent invocation of the program.
+An already downloaded file should never be downloaded again.
 ```
 
 
