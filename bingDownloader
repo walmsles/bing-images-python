@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+
+PYTHON=$(which python3)
+MAINPY=$(dirname $0)/bing-downloader.py
+
+$PYTHON $MAINPY
