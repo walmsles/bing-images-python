@@ -15,7 +15,7 @@ def list_images(market, records, start):
 
 def download_image(image_url, filename):
 	"""downloads the partial relative image_url link into the provided filename """
-	response = requests.get(f'{bing_base_url}/{image_url}')
+	response = requests.get(f'{bing_base_url}{image_url}')
 
 	with open(filename, 'wb') as f:
 		for chunk in response.iter_content(chunk_size=8192):
