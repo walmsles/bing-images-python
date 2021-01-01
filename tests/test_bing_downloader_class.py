@@ -1,6 +1,8 @@
 import inspect
 import pytest
+import os.path
 from bing_images.Downloader import Downloader
+
 
 def test_class_creation():
 	assert inspect.isclass(Downloader)
@@ -39,4 +41,13 @@ def test_add_market():
 		downloader.add_market(market)
 
 	assert f'{market} is not a valid market' == str(e.value) 
+
+def test_get_filename():
+	downloader = Downloader()
+
+	filename = downloader.get_filename('/th?id=OHR.LoonyDook_EN-AU4013491478_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp')
+
+	assert filename == 'LaDigue_1920x1080.jpg'
+
+
 
