@@ -1,4 +1,6 @@
 import pytest
+import os.path
+import os
 import bing_images.services as services
 
 # Tests for web service interactions that are isolated out to seperate utility file
@@ -14,3 +16,16 @@ def test_list_images():
 	assert response.status_code == 200
 	assert 'images' in response_json.keys()
 	assert len(response_json['images']) == 2
+
+def test_download_image():
+	url = '/th?id=OHR.LoonyDook_EN-AU4013491478_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+	filename = 'filename.jpg'
+	services.download_image(url, filename)
+	assert os.path.isfile(filename)
+
+	os.remove(filename)
+
+
+
+
+
