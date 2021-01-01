@@ -2,6 +2,6 @@
 
 
 PYTHON=$(which python3)
-MAINPY=$(dirname $0)/bing-downloader.py
+MAINPY=$(dirname $0)/runner.py
 
 $PYTHON $MAINPY
