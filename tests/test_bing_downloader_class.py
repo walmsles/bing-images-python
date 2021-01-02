@@ -51,6 +51,10 @@ def test_get_filename():
 
 	assert filename == 'LoonyDook.jpg'
 
+	with pytest.raises(Exception) as e:
+		filename = downloader.get_filename( '/th?id=LoonyDook_EN-AU4013491478_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp')
+
+	assert "Image URL structure incorrect: /th?id=LoonyDook_EN-AU4013491478_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" == str(e.value)
 
 def test_download_all(mocker):
 	"""Test Downloader.download_all driver function using service mocks"""
