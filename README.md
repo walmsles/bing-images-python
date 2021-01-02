@@ -1,4 +1,4 @@
-# bing-cli
+# bing-cli [![Build Status](https://travis-ci.com/walmsles/bing-cli-python.svg?branch=main)](https://travis-ci.com/walmsles/bing-cli-python)
 bing-cli is a simple program with the following requirements: 
 
 ```
