@@ -1,7 +1,6 @@
 [report]
-omit=
-	virtualenv/*
-	~/virtualenv/*
+omit=virtualenv/*
+src=.
 exclude_lines=
 	if __name__ == .__main__.:
 	
