@@ -12,7 +12,6 @@ The following should be configurable:
 An already downloaded file should never be downloaded again.
 ```
 
-
 ## goals of bing-images
 bing-images is a simple program which involves use of a JSON web service API as well as local file system manipulations to determine files to be downloaded as well as actual downloading of file content from the web service result. Tthe idea of this simple program is to:
 
@@ -22,3 +21,11 @@ bing-images is a simple program which involves use of a JSON web service API as 
 
 # bing-images-python
 An implementation of bing-images using the python language
+
+# Setup Local Dev Environment
+To ensure the TravisCI environment is consistent with local dev setup local virtual env for python as follows:
+
+```
+source local_setup.sh
+```
+
