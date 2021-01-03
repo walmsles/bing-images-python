@@ -1,6 +1,10 @@
+[run]
+omit=
+	virtualenv/*
+source=
+	.
+
 [report]
-omit=virtualenv/*
-src=.
 exclude_lines=
 	if __name__ == .__main__.:
 	
