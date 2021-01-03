@@ -1,4 +1,4 @@
-# bing-images [![Build Status](https://travis-ci.com/walmsles/bing-images-python.svg?branch=main)](https://travis-ci.com/walmsles/bing-images-python)[![codecov](https://codecov.io/gh/walmsles/bing-images-python/branch/main/graph/badge.svg?token=26A5VAPB99)](https://codecov.io/gh/walmsles/bing-images-python)
+# bing-images [![Build Status](https://travis-ci.com/walmsles/bing-images-python.svg?branch=main)](https://travis-ci.com/walmsles/bing-images-python)[![codecov](https://codecov.io/gh/walmsles/bing-images-python/branch/main/graph/badge.svg?token=DE1CITX78Z)](https://codecov.io/gh/walmsles/bing-images-python)
 bing-images is a simple program with the following requirements: 
 
 ```
