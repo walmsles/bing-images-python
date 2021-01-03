@@ -1,5 +1,10 @@
+[run]
+omit=
+	virtualenv/*
+source=
+	.
 [report]
-omit=virtualenv/*
-exclude_lines=
-	if __name__ == .__main__.:
+exclude_lines =
+    pragma: no cover
+    if __name__ == .__main__.:
 	
